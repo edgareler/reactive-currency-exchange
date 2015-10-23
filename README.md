@@ -6,7 +6,7 @@ A client-server reactive application for currency exchange rate, created with Pl
 
 - Clone this repository.
 - Install and configure [MongoDB](https://www.mongodb.org) to listen the port **27017**.
-- Open a shell and navigate to the project folder:
+- Open a terminal and navigate to the project folder:
 ```sh
 $ cd ./reactive-currency-exchange
 ```
@@ -16,7 +16,7 @@ $ mongoimport -d currency-exchange -c currency ./database.json
 ```
 - Install [JDK 1.8+](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html).
 - Install [Play! Framework 2.4.x](https://www.playframework.com/documentation/2.4.x/Installing).
-- Open a shell and navigate to the server application folder:
+- Open a terminal and navigate to the server application folder:
 ```sh
 $ cd ./currency-exchange-server
 ```
@@ -33,7 +33,7 @@ $ activator
 http://localhost:9000
 ```
 - It will return a "Forbidden" (403) message. The server layer is running.
-- Open a new shell and navigate to the client application folder:
+- Open a new terminal and navigate to the client application folder:
 ```sh
 $ cd ./currency-exchange-client
 ```
