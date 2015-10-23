@@ -1,0 +1,51 @@
+@main{
+    <ul>
+        <li id="btnListCurrencies">
+            <i class="fa fa-list fa-2x"></i><br />
+            List Currencies
+        </li>
+        <li id="btnExchangeCurrencies">
+            <i class="fa fa-exchange fa-2x"></i><br />
+            Currency Exchange
+        </li>
+        <li id="btnRefresh">
+            <i class="fa fa-refresh fa-2x"></i><br />
+            Refresh Rates
+        </li>
+    </ul>
+
+    <div id="listCurrencies">
+	    <input type="text" name="search" id="search" placeholder="Search for a currency">
+
+	    <table id="currencies">
+	        <thead>
+	            <th>Code</th>
+	            <th>Name</th>
+	            <th>Rate</th>
+	        </thead>
+	        <tbody id="currenciesBody">
+	        </tbody>
+	    </table>
+    </div>
+
+    <div id="currencyExchange">
+        <div id="form">
+            <div id="labels">
+                Amount:<br />
+                From:<br />
+                To:<br />
+                &nbsp;
+            </div
+            ><div id="fields">
+                <input type="number" name="amount" id="amount"><br />
+                <input type="text" name="from" id="from"><br />
+                <input type="text" name="to" id="to"><br />
+                <button id="calculate" value="Calculate">Calculate</button>
+            </div>
+        </div>
+
+        <div id="exchangeResult">
+            <i class="fa fa-exchange"></i> <span id="result">12380.00 USD</span>
+        </div>
+    </div>
+}

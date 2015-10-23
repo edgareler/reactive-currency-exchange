@@ -1,0 +1,9 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                           controllers.Application.index()
+GET     /currencies                                 controllers.Application.listCurrencies(term = "all")
+GET     /currencies/:term                           controllers.Application.listCurrencies(term)
+GET     /exchange/:amount/:from/:to                 controllers.Application.exchange(amount: Float, from: String, to: String)
